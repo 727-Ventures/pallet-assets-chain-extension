@@ -25,7 +25,7 @@ use crate::traits::{
 };
 #[cfg(feature = "ink")]
 use ink_lib as ink;
-use obce::ink::ink_env::{
+use obce::ink::env::{
     DefaultEnvironment,
     Environment,
 };
