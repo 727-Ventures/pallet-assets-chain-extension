@@ -14,7 +14,7 @@ obce = { git = "https://github.com/727-Ventures/obce", default-features = false 
 pallet-assets = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.34", default-features = false, optional = true }
 
 # Ink deps
-ink = { version = "~4.0.0-beta", default-features = false, optional = true }
+ink_lib = { package = "ink", version = "~4.0.0-beta", default-features = false, optional = true }
 
 [features]
 default = ["std"]
@@ -24,6 +24,7 @@ substrate = [
 ]
 ink = [
 	"obce/ink",
+	"ink_lib"
 ]
 std = [
 	"scale-info/std",
@@ -37,7 +38,7 @@ substrate-std = [
 ]
 ink-std = [
 	"std",
-	"ink/std",
+	"ink_lib/std",
 	"obce/ink-std",
 ]
 runtime-benchmarks = [

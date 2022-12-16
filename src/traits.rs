@@ -20,6 +20,8 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #[cfg(feature = "ink")]
+use ink_lib as ink;
+#[cfg(feature = "ink")]
 use obce::ink::prelude::vec::Vec;
 #[cfg(feature = "substrate")]
 use obce::substrate::sp_std::vec::Vec;
