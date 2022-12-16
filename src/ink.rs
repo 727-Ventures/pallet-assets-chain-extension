@@ -24,7 +24,7 @@ use crate::traits::{
     PalletAssets,
 };
 
-use ink_lib as ink;
+use ink;
 
 use obce::ink::env::{
     DefaultEnvironment,
