@@ -23,8 +23,9 @@ use crate::traits::{
     Environment as AssetsEnvironment,
     PalletAssets,
 };
-#[cfg(feature = "ink")]
+
 use ink_lib as ink;
+
 use obce::ink::env::{
     DefaultEnvironment,
     Environment,
