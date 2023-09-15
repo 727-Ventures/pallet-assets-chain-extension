@@ -4,14 +4,22 @@ edition = "2021"
 name = "pallet-assets-chain-extension"
 version = "0.1.1"
 
+license = "MIT"
+repository = "https://github.com/Brushfam/pallet-assets-chain-extension"
+documentation = "https://github.com/Brushfam/pallet-assets-chain-extension/blob/main/README.md"
+homepage = "https://727.ventures"
+description = "The repository contains full implementation(ink and substrate parts) of the `pallet-assets` chain extension."
+keywords = ["wasm", "smart-contracts", "blockchain", "chain-extension"]
+categories = ["no-std", "embedded"]
+
 [dependencies]
 # Common deps
 scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
 scale-info = { version = "2", default-features = false, features = ["derive"] }
-obce = { git = "https://github.com/727-Ventures/obce", branch = "polkadot-v0.9.43", default-features = false }
+obce = { version = "0.1.0", default-features = false }
 
 # Substrate deps
-pallet-assets = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.43", default-features = false, optional = true }
+pallet-assets = { version = "24", default-features = false, optional = true }
 
 # Ink deps
 ink = { version = "4.0.0", default-features = false, optional = true }
